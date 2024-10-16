@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {    
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+table {
+    width: 50%;
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin: 2px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 2px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="sectionTienda">
+        <h1>La tienda</h1>
+        <section id="sectionPrecios">
+            <input type="text" name="PrecioA" id="precioA" placeholder="Escribe el precio A" required>
+            <input type="text" name="PrecioB" id="precioB" placeholder="Escribe el precio B" required>
+            <input type="text" name="PrecioC" id="precioC" placeholder="Escribe el precio C" required>
+            <button id="aceptarPrecio">Aceptar</button>
+        </section>
+        <table id="table">
+            <tr>
+                <td>Cédula</td>
+                <td>Producto</td>
+                <td>Cantidad</td>
+                <td>Monto a pagar</td>
+            </tr>
+        </table>
+        <h5>El producto más vendido es <span id="masVendido"></span></h5>
+        <h5>El total acumulado es <span id="totalAcumulado"></span></h5>
+        <button id="agregarCliente">Agregar cliente</butt>
+    </section>
+    <section id="sectionCliente">
+        <input type="text" name="cedula" id="cedula" placeholder="Escribe la cedula">   
+        <input type="text" name="producto" id="producto" placeholder="Escribe el producto">       
+        <input type="text" name="cantidad" id="cantidad" placeholder="Escribe la cantidad">
+        <button id="aceptarCliente">Aceptar</button>
+    </section>
+    <script type="module">
+        import { Cl_Controlador } from "./js/Cl_Controlador.js";
+        new Cl_Controlador();
+    </script>
+</body>
+</html>
