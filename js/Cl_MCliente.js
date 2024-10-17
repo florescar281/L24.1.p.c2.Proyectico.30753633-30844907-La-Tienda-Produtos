@@ -1,5 +1,5 @@
 export class Cl_MCliente {
-    constructor(cedula, producto, cantidad, preA, preB, preC) {
+    constructor({cedula, producto, cantidad, preA, preB, preC}) {
         this.cedula = cedula;
         this.producto = producto;
         this.cantidad = cantidad;

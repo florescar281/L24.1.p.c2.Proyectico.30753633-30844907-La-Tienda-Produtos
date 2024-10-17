@@ -29,7 +29,7 @@ export class Cl_Controlador {
 
 
     aceptarCliente({cedula, producto, cantidad, preA, preB, preC}) {
-        let cliente = new Cl_MCliente(cedula, producto, cantidad, preA, preB, preC);
+        let cliente = new Cl_MCliente({cedula, producto, cantidad, preA, preB, preC});
         this.mtienda.procesarCliente(cliente);
         this.vTienda.mostrarResultado({
             cedula: cliente.cedula,
